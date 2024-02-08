@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-
 export default function Experience(){
     return(
         <div className="bg-neutral-900 h-screen">
