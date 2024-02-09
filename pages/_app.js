@@ -5,6 +5,7 @@ export default function App({ Component, pageProps }) {
   return (
     <div>
       <Header/>
+      <br/>
       <Component {...pageProps}/>
     </div>
   )

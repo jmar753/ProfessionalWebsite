@@ -1,6 +1,14 @@
 import logo from "../public/static/selfie.png"
 import selfie from "@/public/static/selfie.png"
 import Image from "next/image"
+//languages
+import { RiJavascriptFill, TbBrandCpp, FaHtml5, IoLogoCss3, FaPython, FaTools } from 'react-icons/fa';
+//frameworks
+import { FaReact, TbBrandNextjs, FaNodeJs, SiTailwindcss, FaBootstrap } from 'react-icons/fa';
+//tools
+import { FaGithub, FaJira, FaDocker, FaBitbucket, GrOracle } from 'react-icons/fa';
+//databases
+import { DiPostgresql, TbBrandMysql, DiMongodb } from 'react-icons/fa';
 
 export default function Home(){
     const homeInfo = [
@@ -9,6 +17,14 @@ export default function Home(){
         {topText:"96%", bottomText:"Positive feedback from work"},
         {topText:"8", bottomText:"People Team Lead"},
     ]
+
+    const skillsInfo = [
+        {icon:"23+", bottomText:"Projects Development from scratch"},
+        {icon:"2+", bottomText:"Years of Experience"},
+        {icon:"96%", bottomText:"Positive feedback from work"},
+        {icon:"8", bottomText:"People Team Lead"},
+    ]
+
     return(
         <div className="h-screen">
 
