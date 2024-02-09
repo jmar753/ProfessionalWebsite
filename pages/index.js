@@ -12,17 +12,41 @@ import { DiPostgresql, TbBrandMysql, DiMongodb } from 'react-icons/fa';
 
 export default function Home(){
     const homeInfo = [
-        {topText:"23+", bottomText:"Projects Development from scratch"},
+        {topText:"23+", bottomText:"Projects developed from scratch"},
         {topText:"2+", bottomText:"Years of Experience"},
         {topText:"96%", bottomText:"Positive feedback from work"},
         {topText:"8", bottomText:"People Team Lead"},
     ]
 
-    const skillsInfo = [
-        {icon:"23+", bottomText:"Projects Development from scratch"},
-        {icon:"2+", bottomText:"Years of Experience"},
-        {icon:"96%", bottomText:"Positive feedback from work"},
-        {icon:"8", bottomText:"People Team Lead"},
+    const languageInfo = [
+        {icon:RiJavascriptFill, iconName:"JavaScript"},
+        {icon:TbBrandCpp, iconName:"C++"},
+        {icon: FaHtml5, iconName:"HTML"},
+        {icon: IoLogoCss3, iconName:"CSS"},
+        {icon: FaPython, iconName:"Python"},
+        {icon: FaTools, iconName:"Idk"},
+    ]
+
+    const frameworksInfo = [
+        {icon:FaReact, iconName:"React"},
+        {icon:TbBrandNextjs, iconName:"NextJS"},
+        {icon:FaNodeJs, iconName:"Node.js"},
+        {icon:SiTailwindcss, iconName:"TailwindCSS"},
+        {icon:GrOracle, iconName:"Bootstrap"},
+    ]
+
+    const toolsInfo = [
+        {icon:FaGithub, iconName:"Github"},
+        {icon:FaJira, iconName:"Jira"},
+        {icon:FaDocker, iconName:"Docker"},
+        {icon:FaBitbucket, iconName:"BitBucket"},
+        {icon:FaBootstrap, iconName:"Bootstrap"},
+    ]
+
+    const databasesInfo = [
+        {icon:DiPostgresql, iconName:"PostgreSQL"},
+        {icon:TbBrandMysql, iconName:"MySQL"},
+        {icon:DiMongodb, iconName:"MongoDB"},
     ]
 
     return(
