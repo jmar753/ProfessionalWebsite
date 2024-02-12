@@ -66,57 +66,113 @@ export default function Home(){
         <div className="">
 
             {/* My name is section*/}
-            <div className="grid grid-cols-5 text-white pt-8 relative">
-                <div className="p-12 col-span-3">
-                    <div className="text-3xl font-semibold">
-                        Hello! My name is  <span className="text-emerald-400">Jr Nisperos Mohan</span>
+            <div className="pb-12">
+                <div className="grid grid-cols-5 text-white pt-8 py-16 relative">
+                    <div className="p-12 col-span-3">
+                        <div className="text-3xl font-semibold">
+                            Hello! My name is  <span className="text-emerald-400">Lorem Ipsum</span>
+                        </div>
+                        <div className="text-2xl">
+                            A  <span className="text-emerald-400">Neque porro quisquam</span>
+                        </div>
+                        <div className="pt-12">
+                            Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
+                        </div>
+                        <button className="text-white bg-purple-600 p-3 mt-7 mr-24 rounded hover:bg-purple-800">
+                            Download Resume
+                        </button>
                     </div>
-                    <div className="text-2xl">
-                        A  <span className="text-emerald-400">Frontend developer</span>
-                    </div>
-                    <div className="pt-12">
-                        Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
-                    </div>
-                    <button className="text-white bg-purple-600 p-3 mt-7 mr-24 rounded hover:bg-purple-800">
-                        Download Resume
-                    </button>
+                    <img className="object-cover col-span-2 pt-8 h-full absolute bottom-0 right-14" src="/static/selfie.png" alt="Picture of the author"/>
                 </div>
-                <img className="object-cover col-span-2 pt-8 h-full absolute bottom-0 right-14" src="/static/selfie.png" alt="Picture of the author"/>
-            </div>
 
-            {/* information tab */}
-            <div className="grid grid-cols-4 mx-11 py-6 bg-neutral-800 rounded-2xl">
-                {homeInfo.map((item, index) => (
-                    <div className="text-center">
-                        <div className="text-emerald-400 text-5xl" key={item.topText}>
-                        {item.topText}
+                {/* information tab */}
+                <div className="grid grid-cols-4 mx-11 py-6 bg-neutral-800 rounded-2xl">
+                    {homeInfo.map((item, index) => (
+                        <div className="text-center">
+                            <div className="text-emerald-400 text-5xl" key={item.topText}>
+                            {item.topText}
+                            </div>
+                            <div className="text-white" key={item.topText}>
+                            {item.bottomText}
+                            </div>
                         </div>
-                        <div className="text-white" key={item.topText}>
-                        {item.bottomText}
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
             
             {/* Skills section */}
-            <div className="text-white py-4 text-center">
+            <div className="text-white text-center py-20 pb-32">
                 <div className="text-emerald-400 text-5xl py-12">
                     Skills
                 </div>
 
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-2 gap-6">
                     {/* languages */}
-                    <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
-                        {languageInfo.map((item, index) => (
-                            <div className="text-center flex bg-neutral-800 rounded p-2">
-                                <div className="text-emerald-400 text-5xl">
-                                    <item.icon/>
+                    <div>
+                        <h1 className="text-3xl pb-4">Languages</h1>
+                        <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
+                            {languageInfo.map((item, index) => (
+                                <div className="text-center flex bg-neutral-800 rounded p-2">
+                                    <div className="text-emerald-400 text-3xl">
+                                        <item.icon/>
+                                    </div>
+                                    <div className="text-white flex items-center justify-center pl-2">
+                                    {item.iconName}
+                                    </div>
                                 </div>
-                                <div className="text-white flex items-center justify-center pl-2">
-                                {item.iconName}
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* frameworks */}
+                    <div>
+                        <h1 className="text-3xl pb-4">Frameworks</h1>
+                        <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
+                            {frameworksInfo.map((item, index) => (
+                                <div className="text-center flex bg-neutral-800 rounded p-2">
+                                    <div className="text-emerald-400 text-3xl">
+                                        <item.icon/>
+                                    </div>
+                                    <div className="text-white flex items-center justify-center pl-2">
+                                    {item.iconName}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* tools */}
+                    <div>
+                        <h1 className="text-3xl pb-4">Tools</h1>
+                        <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
+                            {toolsInfo.map((item, index) => (
+                                <div className="text-center flex bg-neutral-800 rounded p-2">
+                                    <div className="text-emerald-400 text-3xl">
+                                        <item.icon/>
+                                    </div>
+                                    <div className="text-white flex items-center justify-center pl-2">
+                                    {item.iconName}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* databases */}
+                    <div>
+                        <h1 className="text-3xl pb-4">Databases</h1>
+                        <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
+                            {databasesInfo.map((item, index) => (
+                                <div className="text-center flex bg-neutral-800 rounded p-2">
+                                    <div className="text-emerald-400 text-3xl">
+                                        <item.icon/>
+                                    </div>
+                                    <div className="text-white flex items-center justify-center pl-2">
+                                    {item.iconName}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
