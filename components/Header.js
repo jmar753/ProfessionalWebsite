@@ -15,11 +15,11 @@ export default function Header(){
     ]
 
     return(
-        <div className="grid grid-cols-2 sticky top-0 z-50 bg-neutral-800 text-xl p-2">
-            <div className="text-emerald-400 pl-9 hover:cursor-default">
+        <div className="flex justify-between sticky top-0 z-50 bg-neutral-800 text-xl py-2 px-11">
+            <div className="text-emerald-400 hover:cursor-default">
                 Jr Mohan
             </div>
-            <div className="flex justify-around">
+            <div className="flex gap-10 justify-around">
                 {navOptions.map((item, index) => (
                     <Link href={item.route} passHref legacyBehavior>
                         <button className={`hover:cursor-pointer transition px-1 duration-200 ${router.pathname == item.route ? "text-emerald-400":"text-white hover:text-emerald-600"}`} key={item.value} onClick={()=>setNavState(item.route)}>

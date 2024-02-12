@@ -1,14 +1,19 @@
 import logo from "../public/static/selfie.png"
 import selfie from "@/public/static/selfie.png"
 import Image from "next/image"
+
 //languages
-import { RiJavascriptFill, TbBrandCpp, FaHtml5, IoLogoCss3, FaPython, FaTools } from 'react-icons/fa';
-//frameworks
-import { FaReact, TbBrandNextjs, FaNodeJs, SiTailwindcss, FaBootstrap } from 'react-icons/fa';
-//tools
-import { FaGithub, FaJira, FaDocker, FaBitbucket, GrOracle } from 'react-icons/fa';
-//databases
-import { DiPostgresql, TbBrandMysql, DiMongodb } from 'react-icons/fa';
+// import { RiJavascriptFill, TbBrandCpp, FaHtml5, IoLogoCss3, FaPython, FaTools } from 'react-icons/fa';
+// import { FaReact, TbBrandNextjs, FaNodeJs, SiTailwindcss, FaBootstrap } from 'react-icons/fa';
+// import { FaGithub, FaJira, FaDocker, FaBitbucket, GrOracle } from 'react-icons/fa';
+// import { DiPostgresql, TbBrandMysql, DiMongodb } from 'react-icons/fa';
+import {RiJavascriptFill} from 'react-icons/ri'
+import {TbBrandCpp, TbBrandNextjs, TbBrandMysql} from 'react-icons/tb'
+import {FaHtml5, FaPython, FaTools, FaReact, FaNodeJs, FaBootstrap, FaGithub, FaJira, FaDocker, FaBitbucket} from 'react-icons/fa'
+import {IoLogoCss3} from 'react-icons/io'
+import {SiTailwindcss, SiCplusplus} from 'react-icons/si'
+import {GrOracle} from 'react-icons/gr'
+import {DiPostgresql, DiMongodb} from 'react-icons/di'
 
 export default function Home(){
     const homeInfo = [
@@ -18,13 +23,21 @@ export default function Home(){
         {topText:"8", bottomText:"People Team Lead"},
     ]
 
+    // const languageInfo = [
+    //     {icon:FaHtml5, iconName:"JavaScript"},
+    //     {icon:FaHtml5, iconName:"C++"},
+    //     {icon:FaHtml5, iconName:"HTML"},
+    //     {icon:FaHtml5, iconName:"CSS"},
+    //     {icon:FaPython, iconName:"Python"},
+    //     {icon:FaTools, iconName:"Idk"},
+    // ]
+
     const languageInfo = [
-        {icon:RiJavascriptFill, iconName:"JavaScript"},
-        {icon:TbBrandCpp, iconName:"C++"},
+        {icon: RiJavascriptFill, iconName:"JavaScript"},
+        {icon: SiCplusplus, iconName:"C++"},
         {icon: FaHtml5, iconName:"HTML"},
         {icon: IoLogoCss3, iconName:"CSS"},
-        {icon: FaPython, iconName:"Python"},
-        {icon: FaTools, iconName:"Idk"},
+        {icon: FaPython, iconName:"Python"}
     ]
 
     const frameworksInfo = [
@@ -50,10 +63,10 @@ export default function Home(){
     ]
 
     return(
-        <div className="h-screen">
+        <div className="">
 
             {/* My name is section*/}
-            <div className="grid grid-cols-5 text-white pt-8 px-12 relative">
+            <div className="grid grid-cols-5 text-white pt-8 relative">
                 <div className="p-12 col-span-3">
                     <div className="text-3xl font-semibold">
                         Hello! My name is  <span className="text-emerald-400">Jr Nisperos Mohan</span>
@@ -72,7 +85,7 @@ export default function Home(){
             </div>
 
             {/* information tab */}
-            <div className="grid grid-cols-4 px-12 mx-11 py-6 bg-neutral-800 rounded-2xl">
+            <div className="grid grid-cols-4 mx-11 py-6 bg-neutral-800 rounded-2xl">
                 {homeInfo.map((item, index) => (
                     <div className="text-center">
                         <div className="text-emerald-400 text-5xl" key={item.topText}>
@@ -91,13 +104,20 @@ export default function Home(){
                     Skills
                 </div>
 
-                <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
-                    <div className="bg-neutral-700 rounded h-24">1</div>
-                    <div className="bg-neutral-700 rounded h-24">2</div>
-                    <div className="bg-neutral-700 rounded h-24">3</div>
-                    <div className="bg-neutral-700 rounded h-24">4</div>
-                    <div className="bg-neutral-700 rounded h-24">6</div>
-                    <div className="bg-neutral-700 rounded h-24">7</div>
+                <div className="grid grid-cols-2">
+                    {/* languages */}
+                    <div className="grid grid-cols-3 grid-rows-2 gap-4 px-12">
+                        {languageInfo.map((item, index) => (
+                            <div className="text-center flex bg-neutral-800 rounded p-2">
+                                <div className="text-emerald-400 text-5xl">
+                                    <item.icon/>
+                                </div>
+                                <div className="text-white flex items-center justify-center pl-2">
+                                {item.iconName}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
