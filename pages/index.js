@@ -8,8 +8,8 @@ export default function Home(){
         <div className="">
 
             {/* First Viewport*/}
-            <div className="py-24 h-screen">
-                <div className="grid grid-cols-5 pt-8 py-16 relative">
+            <div className="pb-24 h-[calc(100vh-44px)] flex items-center justify-center">
+                <div className="grid grid-cols-5 relative">
 
                     {/* Text side */}
                     <div className="p-12 col-span-3">
@@ -43,8 +43,10 @@ export default function Home(){
             </div>
 
             {/* Second Viewport*/}
-            <div className="py-24 h-screen">
-                <div className="grid grid-cols-5 pt-8 py-16 relative h-[550px]">
+            <div className="py-24 h-[calc(100vh-44px)] flex items-center justify-center">
+                <div className="grid grid-cols-5 relative">
+
+                    {/* Text side */}
                     <div className="p-12 col-span-3">
                         <h1 className="text-5xl font-semibold">
                             Hello, I'm
@@ -62,6 +64,8 @@ export default function Home(){
                             Download Resume
                         </button>
                     </div>
+
+                    {/* image side */}
                     <div className="h-[500px] w-[500px]">
                         <div className="h-full w-full relative z-0">
                             <img className="relative bg-white object-contain col-span-2 pt-8 h-full w-full rounded-full border-4 z-40 border-black" src="/static/selfie.png" alt="Picture of the author"/>
