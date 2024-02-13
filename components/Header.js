@@ -15,7 +15,7 @@ export default function Header(){
     ]
 
     return(
-        <div className="flex justify-between font-semibold sticky top-0 z-50 text-xl py-2 px-11 shadow-md">
+        <div className="bg-white flex justify-between font-semibold sticky top-0 z-50 text-xl py-2 px-11 shadow-md">
             <div className="hover:cursor-default">
                 Junior.dev
             </div>
