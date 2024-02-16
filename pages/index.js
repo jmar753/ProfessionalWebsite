@@ -17,6 +17,8 @@ export default function Home(){
         {name:"example"},
     ]
 
+    const aboutImages = ["fwip.jpg", "boating.jpg", "forest.jpg", "leaves.jpg"]
+
     return(
         <div className="">
 
@@ -68,18 +70,22 @@ export default function Home(){
 
             {/* About Me*/}
             <div className="h-screen items-center flex">
-                <div className="grid grid-cols-5 h-full relative items-center">
+                <div className="grid grid-cols-5 gap-4 h-full relative items-center">
                     
                     {/* image side */}
                     <div className="col-span-3 h-full">
-                        <div className="h-full w-full relative z-0">
-                            <img className="absolute bg-white object-cover col-span-2 h-[500px] w-[500px] rounded-full border-4 z-40 border-black" src="/static/cowPhoto.jpg" alt="Picture of the author"/>
+                        <div className="h-full flex py-24 gap-2">
+                            {aboutImages.map((item, index) => (
+                                <div className="hover:w-[70%] duration-300 overflow-hidden w-[25%] border-4 border-black rounded-lg">
+                                    <img className="w-full h-full object-cover hover:scale-125 duration-300" src={`/static/${item}`} alt="Picture of the author"/>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
                     {/* Text side */}
-                    <div className="py-12 h-[500px] col-span-2">
-                        <h1 className="text-xl font-semibold text-emerald-500">
+                    <div className="py-12 h-[500px] col-span-2 pl-20">
+                        <h1 className="text-2xl font-semibold text-emerald-500">
                             About Me
                         </h1>
                         <div className="pt-12">
