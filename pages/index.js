@@ -20,7 +20,7 @@ export default function Home(){
     const aboutImages = ["fwip.jpg", "boating.jpg", "forest.jpg", "leaves.jpg"]
 
     return(
-        <div className="">
+        <div className="px-12 max-w-7xl mx-auto">
 
             {/* Introduction */}
             <div className="h-[calc(100vh-44px)] flex items-center justify-center">
@@ -70,11 +70,11 @@ export default function Home(){
 
             {/* About Me*/}
             <div className="h-screen items-center flex">
-                <div className="grid grid-cols-5 gap-4 h-full relative items-center">
+                <div className="grid grid-cols-5 gap-4 h-full w-full relative items-center">
                     
                     {/* image side */}
-                    <div className="col-span-3 h-full">
-                        <div className="h-full flex py-24 gap-2">
+                    <div className="col-span-3 h-full w-full">
+                        <div className="h-full w-full flex py-24 gap-2">
                             {aboutImages.map((item, index) => (
                                 <div className="hover:w-[70%] duration-300 overflow-hidden w-[25%] border-4 border-black rounded-lg">
                                     <img className="w-full h-full object-cover hover:scale-125 duration-300" src={`/static/${item}`} alt="Picture of the author"/>
@@ -82,6 +82,15 @@ export default function Home(){
                             ))}
                         </div>
                     </div>
+
+                    {/* <div className="h-[400px] w-[400px] col-span-3">
+                        <div className="h-full w-full relative z-0">
+                            <img className="absolute bottom-40 right-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/weatherReport.jpg" alt=""/>
+                            <img className="absolute top-40 left-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/forest.jpg" alt=""/>
+                            <img className="absolute bottom-40 left-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/fwip.jpg" alt=""/>
+                            <img className="absolute right-40 top-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-20 border-black" src="/static/leaves.jpg" alt=""/>
+                        </div>
+                    </div> */}
 
                     {/* Text side */}
                     <div className="py-12 h-[500px] col-span-2 pl-20">
