@@ -20,10 +20,10 @@ export default function Home(){
     const aboutImages = ["fwip.jpg", "boating.jpg", "forest.jpg", "leaves.jpg"]
 
     return(
-        <div className="px-12 max-w-7xl mx-auto">
+        <div className="">
 
             {/* Introduction */}
-            <div className="h-[calc(100vh-44px)] flex items-center justify-center">
+            <div className="h-[calc(100vh-44px)] flex items-center justify-center px-12 max-w-7xl mx-auto">
                 <div className="grid grid-cols-5 relative">
 
                     {/* Text side */}
@@ -69,28 +69,19 @@ export default function Home(){
             </div>
 
             {/* About Me*/}
-            <div className="h-screen items-center flex">
+            <div className="h-[calc(100vh)] items-center flex px-12 max-w-7xl mx-auto">
                 <div className="grid grid-cols-5 gap-4 h-full w-full relative items-center">
                     
                     {/* image side */}
-                    <div className="col-span-3 h-full w-full">
-                        <div className="h-full w-full flex py-24 gap-2">
-                            {aboutImages.map((item, index) => (
-                                <div className="hover:w-[70%] duration-300 overflow-hidden w-[25%] border-4 border-black rounded-lg">
-                                    <img className="w-full h-full object-cover hover:scale-125 duration-300" src={`/static/${item}`} alt="Picture of the author"/>
-                                </div>
-                            ))}
+                    <div className="h-full col-span-3">
+                        <div className="h-full flex items-center justify-center w-full relative z-0">
+                            <img className="absolute bottom-48 hover:scale-125 duration-300 right-40 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/boating.jpg" alt=""/>
+                            <img className="absolute top-48 left-40 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/forest.jpg" alt=""/>
+                            <img className="absolute right-32 top-60 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black" src="/static/leaves.jpg" alt=""/>
+
+                            <img className="relative object-cover col-span-2 h-[400px] w-[400px] rounded-full border-4 z-10 border-black" src="/static/fwip.jpg" alt=""/>
                         </div>
                     </div>
-
-                    {/* <div className="h-[400px] w-[400px] col-span-3">
-                        <div className="h-full w-full relative z-0">
-                            <img className="absolute bottom-40 right-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/weatherReport.jpg" alt=""/>
-                            <img className="absolute top-40 left-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/forest.jpg" alt=""/>
-                            <img className="absolute bottom-40 left-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/fwip.jpg" alt=""/>
-                            <img className="absolute right-40 top-40 object-cover col-span-2 h-full w-full rounded-full border-4 z-20 border-black" src="/static/leaves.jpg" alt=""/>
-                        </div>
-                    </div> */}
 
                     {/* Text side */}
                     <div className="py-12 h-[500px] col-span-2 pl-20">
@@ -108,7 +99,7 @@ export default function Home(){
             </div>
 
             {/* Projects*/}
-            <div className="h-screen ">
+            <div className="h-screen px-12 max-w-7xl mx-auto">
                 <h1 className="text-xl font-bold text-emerald-500">
                     Portfolio
                 </h1>
