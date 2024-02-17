@@ -75,10 +75,10 @@ export default function Home(){
                     {/* image side */}
                     <div className="h-full col-span-3">
                         <div className="h-full flex items-center justify-center w-full relative z-0">
-                            <img className="absolute top-[200px] left-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/forest.jpg" alt=""/>
-                            <img className="absolute top-[200px] right-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black" src="/static/leaves.jpg" alt=""/>
-                            <img className="absolute bottom-[200px] left-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/boating.jpg" alt=""/>
-                            <img className="absolute bottom-[200px] right-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/lake.jpg" alt=""/>
+                            <img className="absolute top-[200px] left-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float" src="/static/forest.jpg" alt=""/>
+                            <img className="absolute top-[200px] right-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black  animate-float animation-delay-2000" src="/static/leaves.jpg" alt=""/>
+                            <img className="absolute bottom-[200px] left-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float animation-delay-4000" src="/static/boating.jpg" alt=""/>
+                            <img className="absolute bottom-[200px] right-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black animate-float animation-delay-6000" src="/static/lake.jpg" alt=""/>
 
                             <img className="relative object-cover col-span-2 h-[500px] w-[500px] rounded-full border-4 z-10 border-black" src="/static/fwip.jpg" alt=""/>
 
@@ -88,7 +88,7 @@ export default function Home(){
                     {/* Text side */}
                     <div className="py-12 h-[500px] col-span-2 pl-20">
                         <h1 className="text-5xl font-semibold text-emerald-500">
-                            <span className="text-black">About</span> Me <span className="animate-wave">👋🏻</span>
+                            <span className="text-black">About</span> Me
                         </h1>
                         <div className="pt-12">
                             I am a CSS addicted web developer based in Mississauga with a big passion to create dynamic, animated and stylish websites! My expertise lies in creating web pages using React and Next.js, while using Tailwind to create light weight, but heavy hitting designs that are meant to attract users, and maintain user interest with colours and animations. 
