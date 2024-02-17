@@ -23,7 +23,7 @@ export default function Home(){
         <div className="">
 
             {/* Introduction */}
-            <div className="h-[calc(100vh-44px)] flex items-center justify-center px-12 max-w-7xl mx-auto">
+            <div className="h-[calc(100vh-44px)] flex items-center justify-center px-10 max-w-7xl mx-auto">
                 <div className="grid grid-cols-5 relative">
 
                     {/* Text side */}
@@ -59,7 +59,7 @@ export default function Home(){
                     {/* image side */}
                     <div className="h-[500px] w-[500px] col-span-2">
                         <div className="h-full w-full relative z-0">
-                            <img className="relative bg-white object-contain col-span-2 pt-8 h-full w-full rounded-full border-4 z-40 border-black" src="/static/selfie.png" alt="Picture of the author"/>
+                            <img className="relative bg-white object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/selfieColour.jpg" alt="Picture of the author"/>
                             <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                             <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
@@ -69,24 +69,24 @@ export default function Home(){
             </div>
 
             {/* About Me*/}
-            <div className="h-[calc(100vh)] items-center flex px-12 max-w-7xl mx-auto">
+            <div className="h-[calc(100vh)] items-center flex px-10 max-w-7xl mx-auto">
                 <div className="grid grid-cols-5 gap-4 h-full w-full relative items-center">
                     
                     {/* image side */}
                     <div className="h-full col-span-3">
                         <div className="h-full flex items-center justify-center w-full relative z-0">
-                            <img className="absolute bottom-48 hover:scale-125 duration-300 right-40 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/boating.jpg" alt=""/>
-                            <img className="absolute top-48 left-40 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/forest.jpg" alt=""/>
-                            <img className="absolute right-32 top-60 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black" src="/static/leaves.jpg" alt=""/>
+                            <img className="absolute bottom-[200px] left-[00px] hover:scale-125 duration-300 right-40 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/boating.jpg" alt=""/>
+                            <img className="absolute top-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black" src="/static/forest.jpg" alt=""/>
+                            <img className="absolute top-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black" src="/static/leaves.jpg" alt=""/>
 
-                            <img className="relative object-cover col-span-2 h-[400px] w-[400px] rounded-full border-4 z-10 border-black" src="/static/fwip.jpg" alt=""/>
+                            <img className="relative object-cover col-span-2 h-[500px] w-[500px] rounded-full border-4 z-10 border-black" src="/static/fwip.jpg" alt=""/>
                         </div>
                     </div>
 
                     {/* Text side */}
                     <div className="py-12 h-[500px] col-span-2 pl-20">
-                        <h1 className="text-2xl font-semibold text-emerald-500">
-                            About Me
+                        <h1 className="text-5xl font-semibold text-emerald-500">
+                            <span className="text-black">About</span> Me
                         </h1>
                         <div className="pt-12">
                             I am a CSS addicted web developer based in Mississauga with a big passion to create dynamic, animated and stylish websites! My expertise lies in creating web pages using React and Next.js, while using Tailwind to create light weight, but heavy hitting designs that are meant to attract users, and maintain user interest with colours and animations. 
@@ -99,7 +99,7 @@ export default function Home(){
             </div>
 
             {/* Projects*/}
-            <div className="h-screen px-12 max-w-7xl mx-auto">
+            <div className="h-screen px-10 max-w-7xl mx-auto">
                 <h1 className="text-xl font-bold text-emerald-500">
                     Portfolio
                 </h1>
