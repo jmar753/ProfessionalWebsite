@@ -71,7 +71,7 @@ export default function Home(){
                     {/* image side */}
                     <div className="h-[500px] w-[500px] col-span-2">
                         <div className="h-full w-full relative z-0">
-                            <img className="relative bg-white object-cover col-span-2 h-full w-full rounded-full border-4 z-40 border-black" src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                            <img className="relative bg-white object-cover col-span-2 h-full w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
                             <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                             <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
@@ -87,12 +87,12 @@ export default function Home(){
                     {/* image side */}
                     <div className="h-full col-span-3">
                         <div className="h-full flex items-center justify-center w-full relative z-0">
-                            <img className="absolute top-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float" src={`/static/${aboutImages[0]}`} alt="" onClick={()=>switchImages(0)}/>
-                            <img className="absolute top-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black  animate-float animation-delay-2000" src={`/static/${aboutImages[1]}`} alt="" onClick={()=>switchImages(1)}/>
-                            <img className="absolute bottom-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float animation-delay-4000" src={`/static/${aboutImages[2]}`}alt="" onClick={()=>switchImages(2)}/>
-                            <img className="absolute bottom-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black animate-float animation-delay-6000" src={`/static/${aboutImages[3]}`} alt="" onClick={()=>switchImages(3)}/>
+                            <img className="absolute top-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full z-40 animate-float" src={`/static/${aboutImages[0]}`} alt="" onClick={()=>switchImages(0)}/>
+                            <img className="absolute top-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full z-20 shadow-xl animate-float animation-delay-2000" src={`/static/${aboutImages[1]}`} alt="" onClick={()=>switchImages(1)}/>
+                            <img className="absolute bottom-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full z-40 shadow-xl animate-float animation-delay-4000" src={`/static/${aboutImages[2]}`}alt="" onClick={()=>switchImages(2)}/>
+                            <img className="absolute bottom-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full z-40 shadow-xl animate-float animation-delay-6000" src={`/static/${aboutImages[3]}`} alt="" onClick={()=>switchImages(3)}/>
 
-                            <img className="relative object-cover col-span-2 h-[500px] w-[500px] rounded-full border-4 z-10 border-black" src={`/static/${aboutImages[4]}`} alt=""/>
+                            <img className="relative object-cover col-span-2 h-[500px] w-[500px] rounded-full z-10 shadow-xl" src={`/static/${aboutImages[4]}`} alt=""/>
 
                         </div>
                     </div>
@@ -113,26 +113,29 @@ export default function Home(){
             </div>
 
             {/* Projects*/}
-            <div className="h-screen px-10 max-w-7xl mx-auto text-center">
-                <h1 className="text-7xl font-semibold text-emerald-500">
+            <div className="h-screen mx-auto">
+                <h1 className="text-7xl py-10 font-semibold text-emerald-500 text-center">
                     <span className="text-black">My</span> Portfolio
                 </h1>
                 <div className="flex flex-wrap justify-center">
 
                     {websiteArray.map((item, index) => (
-                    <div className="p-4 max-w-sm" key={index}>
-                        <div className="flex rounded-lg border-4 border-black h-full bg-neutral-800 flex-col transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                    <div className="p-4 max-w-2xl" key={index}>
+                        <div className="flex rounded-lg shadow-xl h-full flex-col transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                            
+                            <img className="object-cover col-span-2 w-36 h-36 rounded-lg m-4" src={`/static/${aboutImages[3]}`} alt="" onClick={()=>switchImages(3)}/>
+                            
+                            {/* Skills*/}
+                            <p className="text-neutral-500 leading-relaxed text-lg font-bold px-4">
+                                Next.js & Bootstrap
+                            </p>
 
-                            {/* black section */}
-                            <div className="flex flex-col justify-between flex-grow rounded-t-lg p-8">
-                                <p className="leading-relaxed text-base text-white dark:text-gray-300">
-                                    Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
-                                </p>
-                            </div>
+                            {/* Title*/}
+                            <p className="leading-relaxed text-2xl font-bold px-4">
+                                Museum Page with Working Back-End
+                            </p>
+                            <div className="py-6">
 
-                            {/* white section */}
-                            <div className="flex items-center rounded-b-lg bg-white">
-                                <h2 className="">Feature 1</h2>
                             </div>
                         </div>
                     </div>
