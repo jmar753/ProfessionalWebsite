@@ -1,6 +1,9 @@
 import { SiJavascript, SiHtml5, SiTailwindcss, SiReact, SiNextdotjs, SiCss3} from "react-icons/si";
+import { useState, useEffect } from "react";
 
 export default function Home(){
+    const [aboutImages, setAboutImages] = useState(["forest.jpg", "leaves.jpg", "boating.jpg", "lake.jpg", "fwip.jpg"])
+
     const devIcons = [
         {name: "HTML", icon: SiHtml5, properties:"text-orange-500"},
         {name: "CSS", icon: SiCss3, properties:"text-sky-500"},
@@ -17,7 +20,16 @@ export default function Home(){
         {name:"example"},
     ]
 
-    const aboutImages = ["fwip.jpg", "boating.jpg", "forest.jpg", "leaves.jpg"]
+    function switchImages(toChange){
+        console.log("clicked")
+        console.log("before: " + aboutImages)
+        var tempArr = aboutImages
+        var temp = tempArr[4]
+        tempArr[4] = tempArr[toChange]
+        tempArr[toChange] = temp
+        setAboutImages(tempArr)
+        console.log("after: " + aboutImages)
+    }
 
     return(
         <div className="divide-y-2 divide-dashed divide-neutral-500">
@@ -46,7 +58,7 @@ export default function Home(){
                         <div className="w-full h-12 justtify-center grid grid-cols-2">
                             <div className="flex justify-between">
                                 {devIcons.map((item, index) => (
-                                    <div className="text-center h-full">
+                                    <div className="text-center h-full" key={index}>
                                         <div className={`text-center text-4xl ${item.properties}`}>
                                             <item.icon/>
                                         </div>
@@ -75,12 +87,12 @@ export default function Home(){
                     {/* image side */}
                     <div className="h-full col-span-3">
                         <div className="h-full flex items-center justify-center w-full relative z-0">
-                            <img className="absolute top-[200px] left-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float" src="/static/forest.jpg" alt=""/>
-                            <img className="absolute top-[200px] right-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black  animate-float animation-delay-2000" src="/static/leaves.jpg" alt=""/>
-                            <img className="absolute bottom-[200px] left-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float animation-delay-4000" src="/static/boating.jpg" alt=""/>
-                            <img className="absolute bottom-[200px] right-[00px] hover:scale-150 duration-300 object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black animate-float animation-delay-6000" src="/static/lake.jpg" alt=""/>
+                            <img className="absolute top-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float" src={`/static/${aboutImages[0]}`} alt="" onClick={()=>switchImages(0)}/>
+                            <img className="absolute top-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-20 border-black  animate-float animation-delay-2000" src={`/static/${aboutImages[1]}`} alt="" onClick={()=>switchImages(1)}/>
+                            <img className="absolute bottom-[200px] left-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black  animate-float animation-delay-4000" src={`/static/${aboutImages[2]}`}alt="" onClick={()=>switchImages(2)}/>
+                            <img className="absolute bottom-[200px] right-[00px] object-cover col-span-2 w-36 h-36 rounded-full border-4 z-40 border-black animate-float animation-delay-6000" src={`/static/${aboutImages[3]}`} alt="" onClick={()=>switchImages(3)}/>
 
-                            <img className="relative object-cover col-span-2 h-[500px] w-[500px] rounded-full border-4 z-10 border-black" src="/static/fwip.jpg" alt=""/>
+                            <img className="relative object-cover col-span-2 h-[500px] w-[500px] rounded-full border-4 z-10 border-black" src={`/static/${aboutImages[4]}`} alt=""/>
 
                         </div>
                     </div>
@@ -105,22 +117,22 @@ export default function Home(){
                 <h1 className="text-7xl font-semibold text-emerald-500">
                     <span className="text-black">My</span> Portfolio
                 </h1>
-                <div class="flex flex-wrap justify-center">
+                <div className="flex flex-wrap justify-center">
 
                     {websiteArray.map((item, index) => (
-                    <div class="p-4 max-w-sm">
-                        <div class="flex rounded-lg border-4 border-black h-full bg-neutral-800 flex-col transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+                    <div className="p-4 max-w-sm" key={index}>
+                        <div className="flex rounded-lg border-4 border-black h-full bg-neutral-800 flex-col transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
 
                             {/* black section */}
-                            <div class="flex flex-col justify-between flex-grow rounded-t-lg p-8">
-                                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            <div className="flex flex-col justify-between flex-grow rounded-t-lg p-8">
+                                <p className="leading-relaxed text-base text-white dark:text-gray-300">
                                     Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
                                 </p>
                             </div>
 
                             {/* white section */}
-                            <div class="flex items-center rounded-b-lg bg-white">
-                                <h2 class="">Feature 1</h2>
+                            <div className="flex items-center rounded-b-lg bg-white">
+                                <h2 className="">Feature 1</h2>
                             </div>
                         </div>
                     </div>

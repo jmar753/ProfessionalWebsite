@@ -21,7 +21,7 @@ export default function Header(){
             </div>
             <div className="flex gap-10 justify-around">
                 {navOptions.map((item, index) => (
-                    <Link href={item.route} passHref legacyBehavior>
+                    <Link href={item.route} passHref legacyBehavior key={index}>
                         <button className={`hover:cursor-pointer transition px-1 duration-200 ${router.pathname == item.route ? "text-emerald-400":"text-black hover:text-emerald-600"}`} key={item.value} onClick={()=>setNavState(item.route)}>
                             {item.value}
                         </button>
