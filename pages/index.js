@@ -35,18 +35,18 @@ export default function Home(){
         <div className="divide-y-2 divide-dashed divide-neutral-500">
 
             {/* Introduction */}
-            <div className="lg:h-[calc(100vh-44px)] lg:flex items-center justify-center px-2 lg:px-10 pt-3 lg:pt-0 lg:max-w-7xl mx-auto">
+            <div className="h-[calc(100vh-44px)] lg:flex items-center justify-center px-2 lg:px-10 pt-3 lg:pt-0 lg:max-w-7xl mx-auto">
                 <div className="lg:grid lg:grid-cols-5 relative">
 
                     {/* Text side */}
                     <div className="lg:p-12 lg:col-span-3">
-                        <h1 className="text-xl lg:text-5xl font-semibold">
+                        <h1 className="text-3xl lg:text-5xl font-semibold">
                             Hello, I'm
                         </h1>
-                        <h1 className="text-xl lg:text-7xl font-bold text-emerald-400 items-center">
+                        <h1 className="text-5xl lg:text-7xl font-bold text-emerald-400 items-center">
                             JR Mohan
                         </h1>
-                        <h1 className="text-xl lg:text-5xl font-semibold">
+                        <h1 className="text-3xl lg:text-5xl font-semibold">
                             A <span className="text-emerald-400">Front-End Developer</span>
                         </h1>
                         <div className="pt-12 hidden lg:block">
@@ -69,12 +69,12 @@ export default function Home(){
                     </div>
 
                     {/* image side */}
-                    <div className="w-[250px] h-[250px] lg:h-[500px] lg:w-[500px] lg:col-span-2">
-                        <div className="h-full w-full relative z-0">
-                            <img className="relative bg-white object-cover col-span-2 h-full w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
-                            <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-                            <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-                            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+                    <div className="lg:h-[500px] lg:w-[500px] lg:col-span-2 pt-20 lg:pt-0">
+                        <div className="h-full w-full relative z-0 flex justify-center items-center">
+                            <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] lg:h-full lg:w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                            <div className="absolute top-0 -left-4 w-20 h-20 lg:w-72 lg:h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                            <div className="absolute top-0 -right-4 w-20 h-20 lg:w-80 lg:h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                            <div className="absolute -bottom-8 left-20 w-20 h-20 lg:w-72 lg:h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
                         </div>
                     </div>
                     <button className="text-white font-semibold bg-purple-600 visible lg:hidden p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
