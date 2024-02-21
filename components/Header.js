@@ -29,7 +29,7 @@ export default function Header(){
                     </Link>
                 ))}
             </div>
-            <div className="flex justify-center items-center">
+            <div className="lg:hidden flex justify-center items-center">
                 <HiMenu className="block md:hidden 0 text-xl">
 
                 </HiMenu>
