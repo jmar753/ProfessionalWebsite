@@ -9,8 +9,8 @@ export default function Header(){
     
     const navOptions = [
         {value:"Home", route:"/"},
-        {value:"Experience", route:"/experience"},
-        {value:"Projects", route:"/projects"},
+        {value:"About", route:"/experience"},
+        {value:"Portfolio", route:"/projects"},
         {value:"Contact", route:"/contact"}
     ]
 
