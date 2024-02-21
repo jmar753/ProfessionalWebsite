@@ -12,27 +12,30 @@ export default function Introduction() {
     ]
 
     return (
-        <div className="h-[calc(100vh-44px)] lg:flex items-center justify-center px-2 lg:px-10 pt-3 lg:pt-0 lg:max-w-7xl mx-auto">
-            <div className="lg:grid lg:grid-cols-5 relative">
+        <div className="h-[calc(100vh-44px)] md:flex items-center justify-center px-2 md:px-10 pt-3 md:pt-0 md:max-w-7xl mx-auto">
+            <div className="md:grid md:grid-cols-5 relative">
 
                 {/* Text side */}
-                <div className="lg:p-12 lg:col-span-3">
-                    <h1 className="text-3xl lg:text-5xl font-semibold">
-                        Hello, I'm
+                <div className="md:p-12 pt-4 md:pt-0 md:col-span-3 md:text-left text-center">
+                    {}
+                    <h1 className="text-3xl md:text-5xl font-semibold">
+                        Hello, I'm <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
                     </h1>
-                    <h1 className="text-5xl lg:text-7xl font-bold text-emerald-400 items-center">
+                    <h1 className="hidden md:block text-7xl font-bold text-emerald-400 items-center">
                         JR Mohan
                     </h1>
-                    <h1 className="text-3xl lg:text-5xl font-semibold">
+                    <h1 className="text-3xl md:text-5xl font-semibold">
                         A <span className="text-emerald-400">Front-End Developer</span>
                     </h1>
-                    <div className="pt-12 hidden lg:block">
+
+
+                    <div className="pt-6 md:pt-12">
                         Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
                     </div>
-                    <button className="text-white hidden lg:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
+                    <button className="text-white hidden md:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
                         Download Resume
                     </button>
-                    <div className="w-full hidden h-12 justtify-center lg:grid grid-cols-2">
+                    <div className="w-full hidden h-12 justtify-center md:grid grid-cols-2">
                         <div className="flex justify-between">
                             {devIcons.map((item, index) => (
                                 <div className="text-center h-full" key={index}>
@@ -46,18 +49,34 @@ export default function Introduction() {
                 </div>
 
                 {/* image side */}
-                <div className="lg:h-[500px] lg:w-[500px] lg:col-span-2 pt-20 lg:pt-0">
+                <div className="md:h-[500px] md:w-[500px] md:col-span-2 pt-20 md:pt-0 hidden md:block">
                     <div className="h-full w-full relative z-0 flex justify-center items-center">
-                        <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] lg:h-full lg:w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                        <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] md:h-full md:w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
                         <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                         <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                         <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
                     </div>
                 </div>
-                <button className="text-white font-semibold bg-purple-600 visible lg:hidden p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
-                    Download Resume
-                </button>
-                <div className="visible lg:hidden w-full h-12 justify-center">
+
+                {/* Mobile */}
+                <div className="pt-4 block md:hidden">
+                    <div className="flex justify-center items-center">
+                        <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                    </div>
+                    <div className="grid grid-cols-3 gap-3 py-4">
+                        <div className="bg-emerald-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
+                            Resume
+                        </div>
+                        <div className="border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
+                            LinkedIn
+                        </div>
+                        <div className="border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
+                            GitHub
+                        </div>
+                    </div>
+                </div>
+
+                <div className="visible md:hidden w-full h-12 pt-6 justify-center">
                     <div className="flex justify-between">
                         {devIcons.map((item, index) => (
                             <div className="text-center h-full" key={index}>

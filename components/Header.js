@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { HiMenu } from "react-icons/hi";
 
 export default function Header(){
     const [navState, setNavState] = useState("/")
@@ -15,11 +16,11 @@ export default function Header(){
     ]
 
     return(
-        <div className="bg-white flex justify-between font-semibold h-11 sticky top-0 z-50 text-xl py-2 px-11 shadow-md">
+        <div className="bg-white flex justify-between font-semibold h-11 sticky top-0 z-50 text-xl py-2 px-4 md:px-11 md:shadow-md">
             <div className="hover:cursor-default">
-                Junior.dev
+                Jr.<span className="text-emerald-400">dev</span>
             </div>
-            <div className="flex gap-10 justify-around">
+            <div className="hidden md:flex gap-10 justify-around">
                 {navOptions.map((item, index) => (
                     <Link href={item.route} passHref legacyBehavior key={index}>
                         <button className={`hover:cursor-pointer transition px-1 duration-200 ${router.pathname == item.route ? "text-emerald-400":"text-black hover:text-emerald-600"}`} key={item.value} onClick={()=>setNavState(item.route)}>
@@ -27,6 +28,11 @@ export default function Header(){
                         </button>
                     </Link>
                 ))}
+            </div>
+            <div className="flex justify-center items-center">
+                <HiMenu className="block md:hidden 0 text-xl">
+
+                </HiMenu>
             </div>
         </div>
     )
