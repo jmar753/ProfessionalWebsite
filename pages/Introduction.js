@@ -78,7 +78,7 @@ export default function Introduction() {
 
 
                 {/* Carousel Try */}
-                {/* <div class="w-full inline-flex flex-nowrap lg:hidden pt-6 overflow-hidden  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-40px),transparent_100%)]">
+                <div class="w-full inline-flex flex-nowrap lg:hidden pt-6 overflow-hidden">
                     <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
                         {devIcons.map((item, index) => (
                             <li className="text-center h-full" key={index}>
@@ -99,9 +99,9 @@ export default function Introduction() {
                             </li>
                         ))}
                     </ul>
-                </div> */}
+                </div>
 
-                {/* <div className="flex justify-between pt-7">
+                {/* <div className="lg:hidden flex justify-between pt-7">
                     {devIcons.map((item, index) => (
                         <div className="text-center h-full" key={index}>
                             <div className={`text-center text-4xl ${item.properties}`}>
@@ -111,7 +111,7 @@ export default function Introduction() {
                     ))}
                 </div> */}
                 
-                <div className="grid grid-cols-3 gap-2">
+                {/* <div className="lg:hidden grid grid-cols-3 gap-2">
                     {devIcons.map((item, index) => (
                     <div className="text-center h-full" key={index}>
                         <div className={`text-center text-3xl`}>
@@ -120,7 +120,7 @@ export default function Introduction() {
                         </div>
                     </div>
                 ))}
-                </div>
+                </div> */}
 
             </div>
         </div>
