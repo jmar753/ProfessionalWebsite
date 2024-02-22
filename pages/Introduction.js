@@ -3,9 +3,9 @@ import { SiJavascript, SiHtml5, SiTailwindcss, SiReact, SiNextdotjs, SiCss3} fro
 export default function Introduction() {
 
     const devIcons = [
-        {name: "HTML", icon: SiHtml5, properties:"text-orange-500"},
+        {name: "HTML5", icon: SiHtml5, properties:"text-orange-500"},
         {name: "CSS", icon: SiCss3, properties:"text-sky-500"},
-        {name: "Javascript", icon: SiJavascript, properties:"text-yellow-300 bg-black"},
+        {name: "Javascript", icon: SiJavascript, properties:"text-yellow-300"},
         {name: "Next.js", icon: SiNextdotjs, properties:"text-black"},
         {name: "React", icon: SiReact, properties:"text-sky-300"},
         {name: "Tailwind", icon: SiTailwindcss, properties:"text-sky-400"},
@@ -16,7 +16,7 @@ export default function Introduction() {
             <div className="md:grid md:grid-cols-5 relative">
 
                 {/* Text side */}
-                <div className="md:p-12 pt-4 md:pt-0 md:col-span-3 md:text-left text-center">
+                <div className="md:p-12 md:col-span-3 md:text-left text-center">
                     {}
                     <h1 className="text-3xl md:text-5xl font-semibold">
                         Hello, I'm <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
@@ -29,7 +29,7 @@ export default function Introduction() {
                     </h1>
 
 
-                    <div className="pt-6 md:pt-12">
+                    <div className="pt-4 md:pt-12">
                         Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
                     </div>
                     <button className="text-white hidden md:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
@@ -76,17 +76,52 @@ export default function Introduction() {
                     </div>
                 </div>
 
-                <div className="visible md:hidden w-full h-12 pt-6 justify-center">
-                    <div className="flex justify-between">
+
+                {/* Carousel Try */}
+                {/* <div class="w-full inline-flex flex-nowrap lg:hidden pt-6 overflow-hidden  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-40px),transparent_100%)]">
+                    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
                         {devIcons.map((item, index) => (
-                            <div className="text-center h-full" key={index}>
-                                <div className={`text-center text-4xl ${item.properties}`}>
-                                    <item.icon/>
+                            <li className="text-center h-full" key={index}>
+                                <div className={`text-center text-4xl`}>
+                                    <item.icon className={`mx-auto ${item.properties}`}/>
+                                    <h1 className="text-lg font-semibold">{item.name}</h1>
                                 </div>
-                            </div>
+                            </li>
                         ))}
+                    </ul>
+                    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                        {devIcons.map((item, index) => (
+                            <li className="text-center h-full" key={index}>
+                                <div className={`text-center text-4xl`}>
+                                    <item.icon className={`mx-auto ${item.properties}`}/>
+                                    <h1 className="text-lg font-semibold">{item.name}</h1>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div> */}
+
+                {/* <div className="flex justify-between pt-7">
+                    {devIcons.map((item, index) => (
+                        <div className="text-center h-full" key={index}>
+                            <div className={`text-center text-4xl ${item.properties}`}>
+                                <item.icon/>
+                            </div>
+                        </div>
+                    ))}
+                </div> */}
+                
+                <div className="grid grid-cols-3 gap-2">
+                    {devIcons.map((item, index) => (
+                    <div className="text-center h-full" key={index}>
+                        <div className={`text-center text-3xl`}>
+                            <item.icon className={`mx-auto ${item.properties}`}/>
+                            <h1 className="text-base font-semibold">{item.name}</h1>
+                        </div>
                     </div>
+                ))}
                 </div>
+
             </div>
         </div>
     )

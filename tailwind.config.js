@@ -10,6 +10,7 @@ module.exports = {
       animation: {
         blob: "blob 7s infinite",
         float: "float 8s ease-in-out infinite",
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
       keyframes: {
         blob: {
@@ -39,6 +40,10 @@ module.exports = {
           "100%": {
             transform: "translate(0px, 0px)"
           }
+        },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
         }
       }
     },
