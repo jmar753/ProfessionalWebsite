@@ -29,7 +29,7 @@ export default function Introduction() {
                     </h1>
 
 
-                    <div className="pt-4 md:pt-12">
+                    <div className="pt-4 md:pt-8k">
                         Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
                     </div>
                     <button className="text-white hidden md:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
