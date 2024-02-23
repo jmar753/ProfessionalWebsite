@@ -15,7 +15,7 @@ export default function About() {
     }
 
     return (
-        <div className="h-[calc(100vh)] items-center flex px-10 max-w-7xl mx-auto">
+        <div className="items-center flex px-10 max-w-7xl mx-auto">
             <div className="grid grid-cols-5 gap-4 h-full w-full relative items-center">
                 
                 {/* image side */}
