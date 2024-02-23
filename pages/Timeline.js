@@ -1,41 +1,35 @@
 export default function Timeline(){
 
     return(
-        <div className="h-[calc(100vh-44px)] md:flex items-center justify-center px-2 md:px-10 pt-3 md:pt-0 md:max-w-7xl mx-auto">
-            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-            {/* <!-- Item #1 --> */}
-            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                {/* <!-- Icon --> */}
-                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                </div>
-                {/* <!-- Card --> */}
-                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-                    <div class="flex items-center justify-between space-x-2 mb-1">
-                        <div class="font-bold text-slate-900">Order Placed</div>
-                        <time class="font-caveat font-medium text-indigo-500">08/06/2023</time>
+        <div className="md:flex items-center justify-center px-2 md:px-10 pt-3 md:pt-0 md:max-w-7xl mx-auto">
+            <div className="container mx-auto">
+                <div className="grid gap-4 mx-4 sm:grid-cols-12">
+                    <div className="col-span-12 sm:col-span-3">
+                        <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-emerald-400">
+                            <h3 className="text-3xl font-semibold">My Timeline</h3>
+                            <span className="text-sm font-bold tracki uppercase dark:text-gray-400">So Far</span>
+                        </div>
                     </div>
-                    <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus.</div>
-                </div>
-            </div>
-
-            {/* <!-- Item #2 --> */}
-            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                {/* <!-- Icon --> */}
-                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
-                        <path fill-rule="nonzero" d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z" />
-                    </svg>
-                </div>
-                {/* <!-- Card --> */}
-                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-                    <div class="flex items-center justify-between space-x-2 mb-1">
-                        <div class="font-bold text-slate-900">Order Shipped</div>
-                        <time class="font-caveat font-medium text-indigo-500">09/06/2023</time>
+                    <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
+                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-emerald-400">
+                                <h3 className="text-xl font-semibold tracki">Donec porta enim vel </h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400">Dec 2020</time>
+                                <p className="mt-3">Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            </div>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-emerald-400">
+                                <h3 className="text-xl font-semibold tracki">Aliquam sit amet nunc ut</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400">Jul 2019</time>
+                                <p className="mt-3">Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.</p>
+                            </div>
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-emerald-400">
+                                <h3 className="text-xl font-semibold tracki">Pellentesque habitant morbi</h3>
+                                <time className="text-xs tracki uppercase dark:text-gray-400">Jan 2016</time>
+                                <p className="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus.</div>
                 </div>
-            </div>
-
             </div>
         </div>
     )
