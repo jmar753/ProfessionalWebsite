@@ -13,8 +13,8 @@ export default function Introduction() {
 
     return (
         <div className="h-[calc(100vh-44px)] md:flex items-center justify-center">
-            <div className="px-2 md:px-0  pt-3 md:pt-0 md:max-w-7xl mx-auto">
-                <div className="md:grid md:grid-cols-5 relative h-[700px]">
+            <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto">
+                <div className="md:grid md:grid-cols-5 md:pb-4 relative h-[700px]">
 
                     {/* Text side */}
                     <div className="md:p-12 md:col-span-3 md:text-left text-center">
@@ -30,14 +30,23 @@ export default function Introduction() {
                                     A <span className="text-emerald-400">Front-End Developer</span>
                                 </h1>
 
-
-                                <div className="pt-4 md:pt-8k">
+                                <div className="pt-4 md:pt-8 py-5">
                                     Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
                                 </div>
-                                <button className="text-white hidden md:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
-                                    Download Resume
-                                </button>
-                                <div className="w-full hidden h-12 justtify-center md:grid grid-cols-2">
+
+                                <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
+                                    <div className="hover:cursor-pointer hover:bg-purple-800 bg-purple-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
+                                    Resume
+                                    </div>
+                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
+                                        LinkedIn
+                                    </div>
+                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
+                                        GitHub
+                                    </div>
+                                </div>
+
+                                <div className="w-full hidden h-12 justtify-center pt-3 md:grid grid-cols-2">
                                     <div className="flex justify-between">
                                         {devIcons.map((item, index) => (
                                             <div className="text-center h-full" key={index}>
