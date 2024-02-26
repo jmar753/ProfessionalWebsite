@@ -13,46 +13,49 @@ export default function Introduction() {
 
     return (
         <div className="h-[calc(100vh-44px)] md:flex items-center justify-center">
-            <div className="px-2 md:px-10 pt-3 md:pt-0 md:max-w-7xl mx-auto">
-                <div className="md:grid md:grid-cols-5 relative">
+            <div className="px-2 md:px-0  pt-3 md:pt-0 md:max-w-7xl mx-auto">
+                <div className="md:grid md:grid-cols-5 relative h-[700px]">
 
                     {/* Text side */}
                     <div className="md:p-12 md:col-span-3 md:text-left text-center">
-                        {}
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
-                            Hello, I'm <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
-                        </h1>
-                        <h1 className="hidden md:block text-6xl lg:text-7xl font-bold text-emerald-400 items-center">
-                            JR Mohan
-                        </h1>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
-                            A <span className="text-emerald-400">Front-End Developer</span>
-                        </h1>
+                        <div className="h-full flex items-center justify-center">
+                            <div className="">
+                                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+                                    Hello, I'm <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
+                                </h1>
+                                <h1 className="hidden md:block text-6xl lg:text-7xl font-bold text-emerald-400 items-center">
+                                    JR Mohan
+                                </h1>
+                                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+                                    A <span className="text-emerald-400">Front-End Developer</span>
+                                </h1>
 
 
-                        <div className="pt-4 md:pt-8k">
-                            Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
-                        </div>
-                        <button className="text-white hidden md:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
-                            Download Resume
-                        </button>
-                        <div className="w-full hidden h-12 justtify-center md:grid grid-cols-2">
-                            <div className="flex justify-between">
-                                {devIcons.map((item, index) => (
-                                    <div className="text-center h-full" key={index}>
-                                        <div className={`text-center text-4xl ${item.properties}`}>
-                                            <item.icon/>
-                                        </div>
+                                <div className="pt-4 md:pt-8k">
+                                    Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
+                                </div>
+                                <button className="text-white hidden md:block font-semibold bg-purple-600 p-3 my-7 mr-24 rounded-lg hover:bg-purple-800">
+                                    Download Resume
+                                </button>
+                                <div className="w-full hidden h-12 justtify-center md:grid grid-cols-2">
+                                    <div className="flex justify-between">
+                                        {devIcons.map((item, index) => (
+                                            <div className="text-center h-full" key={index}>
+                                                <div className={`text-center text-4xl ${item.properties}`}>
+                                                    <item.icon/>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
-                                ))}
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     {/* image side */}
-                    <div className="md:col-span-2 pt-20 md:pt-0 hidden md:block">
-                        <div className="w-1/2 pb-1/2  relative z-0 flex justify-center items-center">
-                            <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] md:h-full md:w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                    <div className="h-full w-full md:col-span-2 pt-20 md:pt-0 hidden md:flex  justify-center items-center">
+                        <div className="relative z-0">
+                            <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
                             <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                             <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
