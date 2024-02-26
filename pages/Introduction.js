@@ -12,7 +12,7 @@ export default function Introduction() {
     ]
 
     return (
-        <div className="h-[calc(100vh-44px)] md:flex items-center justify-center">
+        <div className="min-h-[calc(100vh-44px)] md:flex items-center justify-center">
             <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto">
                 <div className="md:grid md:grid-cols-5 md:pb-4 relative h-[700px]">
 
@@ -35,13 +35,13 @@ export default function Introduction() {
                                 </div>
 
                                 <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
-                                    <div className="hover:cursor-pointer hover:bg-purple-800 bg-purple-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
+                                    <div className="hover:cursor-pointer hover:bg-purple-800 duration-200 bg-purple-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
                                     Resume
                                     </div>
-                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
+                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white duration-200  border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
                                         LinkedIn
                                     </div>
-                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
+                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white duration-200  border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
                                         GitHub
                                     </div>
                                 </div>
@@ -77,13 +77,13 @@ export default function Introduction() {
                             <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColour.jpg" alt="Picture of the author"/>
                         </div>
                         <div className="grid grid-cols-3 gap-3 py-4">
-                            <div className="bg-emerald-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
+                            <div className="hover:cursor-pointer hover:bg-emerald-800 duration-200  bg-emerald-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
                                 Resume
                             </div>
-                            <div className="border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
+                            <div className="hover:cursor-pointer hover:bg-emerald-500 hover:text-white duration-200  border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
                                 LinkedIn
                             </div>
-                            <div className="border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
+                            <div className="hover:cursor-pointer hover:bg-emerald-500 hover:text-white duration-200  border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
                                 GitHub
                             </div>
                         </div>

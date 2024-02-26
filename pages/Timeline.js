@@ -1,7 +1,7 @@
 export default function Timeline(){
 
     return(
-        <div className="md:h-[calc(100vh-44px)] md:flex items-center justify-center py-14 lg:py-0">
+        <div className="md:min-h-[calc(100vh-44px)] md:flex items-center justify-center py-14 lg:py-0">
             <div className="px-2 md:px-10 pt-3 md:pt-0 md:max-w-7xl mx-auto">
                 <div className="container mx-auto">
                     <div className="grid gap-4 mx-4 sm:grid-cols-12">
