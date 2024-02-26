@@ -19,13 +19,13 @@ export default function Introduction() {
                     {/* Text side */}
                     <div className="md:p-12 md:col-span-3 md:text-left text-center">
                         {}
-                        <h1 className="text-3xl md:text-5xl font-semibold">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
                             Hello, I'm <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
                         </h1>
-                        <h1 className="hidden md:block text-7xl font-bold text-emerald-400 items-center">
+                        <h1 className="hidden md:block text-6xl lg:text-7xl font-bold text-emerald-400 items-center">
                             JR Mohan
                         </h1>
-                        <h1 className="text-3xl md:text-5xl font-semibold">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
                             A <span className="text-emerald-400">Front-End Developer</span>
                         </h1>
 
@@ -50,8 +50,8 @@ export default function Introduction() {
                     </div>
 
                     {/* image side */}
-                    <div className="md:h-[500px] md:w-[500px] md:col-span-2 pt-20 md:pt-0 hidden md:block">
-                        <div className="h-full w-full relative z-0 flex justify-center items-center">
+                    <div className="md:col-span-2 pt-20 md:pt-0 hidden md:block">
+                        <div className="w-1/2 pb-1/2  relative z-0 flex justify-center items-center">
                             <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] md:h-full md:w-full rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
                             <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                             <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>

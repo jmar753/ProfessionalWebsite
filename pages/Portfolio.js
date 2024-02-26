@@ -8,7 +8,7 @@ export default function Portfolio() {
     ]
 
     return (
-        <div className="">
+        <div className="min-h-[calc(100vh-44px)]">
             <div className="mx-auto">
                 <h1 className="text-4xl md:text-5xl py-10 font-semibold text-emerald-500 text-center">
                     <span className="text-black">My</span> Portfolio
