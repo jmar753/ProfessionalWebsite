@@ -1,4 +1,5 @@
 import { SiJavascript, SiHtml5, SiTailwindcss, SiReact, SiNextdotjs, SiCss3} from "react-icons/si";
+import Link from "next/link";
 
 export default function Introduction() {
 
@@ -35,15 +36,21 @@ export default function Introduction() {
                                 </div>
 
                                 <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
-                                    <div className="hover:cursor-pointer hover:bg-purple-800 duration-200 bg-purple-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
-                                    Resume
-                                    </div>
-                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white duration-200  border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
-                                        LinkedIn
-                                    </div>
-                                    <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white duration-200  border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
-                                        GitHub
-                                    </div>
+                                    <a href="/JrMohan_Resume.pdf" locale={false}>
+                                        <div className="hover:cursor-pointer hover:bg-purple-800 duration-200 bg-purple-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
+                                        Resume
+                                        </div>
+                                    </a>
+                                    <Link href="https://www.linkedin.com/in/jr-mohan-a82562240/">
+                                        <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white duration-200  border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
+                                            LinkedIn
+                                        </div>
+                                    </Link>
+                                    <Link href="https://github.com/jmar753">
+                                        <div className="hover:cursor-pointer hover:bg-purple-500 hover:text-white duration-200  border-purple-500 border-2 font-semibold text-lg text-purple-500 rounded-md flex justify-center items-center h-12 w-full">
+                                            GitHub
+                                        </div>
+                                    </Link>
                                 </div>
 
                                 <div className="w-full hidden h-12 justtify-center pt-3 md:grid grid-cols-2">
@@ -62,7 +69,7 @@ export default function Introduction() {
                     </div>
 
                     {/* image side */}
-                    <div className="h-full w-full md:col-span-2 pt-20 md:pt-0 hidden md:flex  justify-center items-center">
+                    <div className="h-full w-full md:col-span-2 pt-20 md:pt-0 hidden md:flex overflow-visible justify-center items-center">
                         <div className="relative z-0">
                             <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
                             <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
@@ -77,15 +84,21 @@ export default function Introduction() {
                             <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColour.jpg" alt="Picture of the author"/>
                         </div>
                         <div className="grid grid-cols-3 gap-3 py-4">
-                            <div className="hover:cursor-pointer hover:bg-emerald-800 duration-200  bg-emerald-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
-                                Resume
-                            </div>
-                            <div className="hover:cursor-pointer hover:bg-emerald-500 hover:text-white duration-200  border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
-                                LinkedIn
-                            </div>
-                            <div className="hover:cursor-pointer hover:bg-emerald-500 hover:text-white duration-200  border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
-                                GitHub
-                            </div>
+                            <a href="/JrMohan_Resume.pdf" locale={false}>
+                                <div className="hover:cursor-pointer hover:bg-emerald-800 duration-200  bg-emerald-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
+                                    Resume
+                                </div>
+                            </a>
+                            <Link href="https://www.linkedin.com/in/jr-mohan-a82562240/">
+                                <div className="hover:cursor-pointer hover:bg-emerald-500 hover:text-white duration-200  border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
+                                    LinkedIn
+                                </div>
+                            </Link>
+                            <Link href="https://github.com/jmar753">
+                                <div className="hover:cursor-pointer hover:bg-emerald-500 hover:text-white duration-200  border-emerald-500 border-2 font-semibold text-lg text-emerald-500 rounded-md flex justify-center items-center h-12 w-full">
+                                    GitHub
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
