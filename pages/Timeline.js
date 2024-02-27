@@ -17,28 +17,34 @@ export default function Timeline(){
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-400">
                                     <h3 className="text-xl font-semibold tracki">Start of Studies - Seneca Polytechnic | Computer Programming </h3>
                                     <time className="text-xs tracki uppercase text-gray-400">Sep 2021</time>
-                                    <p className="mt-3">Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                                 </div>
 
                                 {/* 2 */}
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-400">
-                                    <h3 className="text-xl font-semibold tracki">Received Co-Op at Andie (alwaysandie) | Front-End Intern</h3>
-                                    <time className="text-xs tracki uppercase text-gray-400">Sep 2022</time>
-                                    <p className="mt-3">Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.</p>
+                                    <h3 className="text-xl font-semibold tracki">Co-Op at Andie (alwaysandie) | Front-End Intern</h3>
+                                    <time className="text-xs tracki uppercase text-gray-400">Sep 2022 - Mar 2023</time>
+                                    <p className="mt-3">Designed and developed Andie’s various in-house applications for internal teams, and also helped developed various versions of the Andie website using React and Tailwind.</p>
                                 </div>
 
                                 {/* 3 */}
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-400">
                                     <h3 className="text-xl font-semibold tracki">Return Offer from Andie | Front-End Dev</h3>
-                                    <time className="text-xs tracki uppercase text-gray-400">March 2023</time>
-                                    <p className="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
+                                    <time className="text-xs tracki uppercase text-gray-400">Apr 2023 - Sep 2023</time>
+                                    <p className="mt-3">Received return offer outside of co-op to continue developing for the company. Learned about back-end development and databases using Django. Selected as the main front-end developer for Andie’s company website and main catering application.</p>
                                 </div>
 
                                 {/* 4 */}
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-400">
                                     <h3 className="text-xl font-semibold tracki">Graduated From Seneca</h3>
                                     <time className="text-xs tracki uppercase text-gray-400">Sep 2023</time>
-                                    <p className="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
+                                    <p className="mt-3">Graduated with 4.0 GPA, achieving high honours. <a>View My Transcript</a></p>
+                                </div>
+
+                                {/* 5 */}
+                                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-400">
+                                    <h3 className="text-xl font-semibold tracki">Started Programming Portfolio</h3>
+                                    <time className="text-xs tracki uppercase text-gray-400">Dec 2023 - Today</time>
+                                    <p className="mt-3">Continuing to develop front-end projects by creating web and landing pages using React and Next.js. Learning new things about frameworks and design everyday and enjoying my time expressing myself with every new project!</p>
                                 </div>
                             </div>
                         </div>
