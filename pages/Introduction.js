@@ -71,7 +71,7 @@ export default function Introduction() {
                     {/* image side */}
                     <div className="h-full w-full md:col-span-2 pt-20 md:pt-0 hidden md:flex overflow-visible justify-center items-center">
                         <div className="relative z-0">
-                            <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] rounded-full shadow-lg z-40 " src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                            <img className="relative bg-white object-cover col-span-2 h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] rounded-full shadow-lg z-40 " src="/static/selfieColourCropped.jpg" alt="Picture of the author"/>
                             <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                             <div className="absolute top-0 -right-4 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
@@ -81,7 +81,7 @@ export default function Introduction() {
                     {/* Mobile */}
                     <div className="pt-4 block md:hidden">
                         <div className="flex justify-center items-center">
-                            <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColour.jpg" alt="Picture of the author"/>
+                            <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColourCropped.jpg" alt="Picture of the author"/>
                         </div>
                         <div className="grid grid-cols-3 gap-3 py-4">
                             <a href="/JrMohan_Resume.pdf" locale={false}>
