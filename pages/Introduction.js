@@ -1,4 +1,4 @@
-import { SiJavascript, SiHtml5, SiTailwindcss, SiReact, SiNextdotjs, SiCss3} from "react-icons/si";
+import { SiJavascript, SiHtml5, SiTailwindcss, SiReact, SiNextdotjs, SiCss3, SiDocker, SiPython, SiNodedotjs, SiGithub } from "react-icons/si";
 import Link from "next/link";
 
 export default function Introduction() {
@@ -12,9 +12,23 @@ export default function Introduction() {
         {name: "Tailwind", icon: SiTailwindcss, properties:"text-sky-400"},
     ]
 
+    const devIconsMobile = [
+        {name: "HTML5", icon: SiHtml5, properties:"text-orange-500"},
+        {name: "CSS", icon: SiCss3, properties:"text-sky-500"},
+        {name: "Javascript", icon: SiJavascript, properties:"text-yellow-300"},
+        {name: "Next.js", icon: SiNextdotjs, properties:"text-black"},
+        {name: "React", icon: SiReact, properties:"text-sky-300"},
+        {name: "Python", icon: SiPython, properties:"text-gray-700"},
+        {name: "Node.js", icon: SiNodedotjs, properties:"text-green-400"},
+        {name: "Tailwind", icon: SiTailwindcss, properties:"text-sky-400"},
+        {name: "Docker", icon: SiDocker, properties:"text-blue-400"},
+        {name: "GitHub", icon: SiGithub, properties:"text-black"},
+
+    ]
+
     return (
         <div className="min-h-[calc(100vh-44px)] md:flex items-center justify-center">
-            <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto">
+            <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto ">
                 <div className="md:grid md:grid-cols-5 md:pb-4 relative h-[700px]">
 
                     {/* Text side */}
@@ -106,7 +120,7 @@ export default function Introduction() {
                     {/* Carousel Try */}
                     <div class="w-full inline-flex flex-nowrap md:hidden pt-6 overflow-hidden">
                         <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
-                            {devIcons.map((item, index) => (
+                            {devIconsMobile.map((item, index) => (
                                 <li className="text-center h-full" key={index}>
                                     <div className={`text-center text-4xl`}>
                                         <item.icon className={`mx-auto ${item.properties}`}/>
@@ -116,7 +130,7 @@ export default function Introduction() {
                             ))}
                         </ul>
                         <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-                            {devIcons.map((item, index) => (
+                            {devIconsMobile.map((item, index) => (
                                 <li className="text-center h-full" key={index}>
                                     <div className={`text-center text-4xl`}>
                                         <item.icon className={`mx-auto ${item.properties}`}/>

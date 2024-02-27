@@ -10,9 +10,8 @@ export default function Header(){
     
     const navOptions = [
         {value:"Home", route:"/"},
-        {value:"About", route:"/experience"},
-        {value:"Portfolio", route:"/projects"},
-        {value:"Contact", route:"/contact"}
+        {value:"Timeline", route:"/Timeline"},
+        {value:"Portfolio", route:"/Portfolio"},
     ]
 
     return(
@@ -29,7 +28,7 @@ export default function Header(){
                     </Link>
                 ))}
             </div>
-            <div className="lg:hidden flex justify-center items-center">
+            <div className="md:hidden flex justify-center items-center">
                 <HiMenu className="block md:hidden 0 text-xl">
 
                 </HiMenu>
