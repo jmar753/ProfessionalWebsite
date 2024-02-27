@@ -35,7 +35,7 @@ export default function Introduction() {
                     <div className="md:p-12 md:col-span-3 md:text-left text-center">
                         <div className="h-full flex items-center justify-center">
                             <div className="">
-                                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+                                <h1 className="text-3xl pt-4 md:pt-0 md:text-4xl lg:text-5xl font-semibold">
                                     Hello, I&apos;m <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
                                 </h1>
                                 <h1 className="hidden md:block text-6xl lg:text-7xl font-bold text-emerald-400 items-center">
@@ -46,7 +46,7 @@ export default function Introduction() {
                                 </h1>
 
                                 <div className="pt-4 md:pt-8 py-5">
-                                👋 Welcome to my web development portfolio! I&apos;m Jr Mohan, a recent graduate from Seneca Polytechnic with a passion for creating captivating web experiences. With specialized knowledge in React and Next.js, I bring creative solutions to every project I undertake. I thrive on turning ideas into reality through clean, efficient code!
+                                <span className="hidden md:block">👋 Welcome to my web development portfolio! I&apos;m Jr Mohan, a recent graduate</span> from Seneca Polytechnic with a passion for creating captivating web experiences. With specialized knowledge in React and Next.js, I thrive on turning ideas into reality through clean, efficient code!
                                 </div>
 
                                 <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
