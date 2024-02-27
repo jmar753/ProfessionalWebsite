@@ -18,7 +18,7 @@ export default function Introduction() {
                 <div className="md:grid md:grid-cols-5 md:pb-4 relative h-[700px]">
 
                     {/* Text side */}
-                    <div className="md:p-12 md:col-span-3 md:text-left text-center">
+                    <div className="md:p-12 pt-6 md:pt-0 md:col-span-3 md:text-left text-center">
                         <div className="h-full flex items-center justify-center">
                             <div className="">
                                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
