@@ -46,7 +46,7 @@ export default function Introduction() {
                                 </h1>
 
                                 <div className="pt-4 md:pt-8 py-5">
-                                    Welcome to my Web Development services! I am a dedicated frontend developer committed to bringing your digital vision to life with cutting-edge technilogies and stunning designs.
+                                👋 Welcome to my web development portfolio! I'm Jr Mohan, a recent graduate from Seneca Polytechnic with a passion for creating captivating web experiences. With specialized knowledge in React and Next.js, I bring a fresh perspective and innovative solutions to every project I undertake. Whether it's crafting intuitive user interfaces or optimizing performance, I thrive on turning ideas into reality through clean, efficient code!
                                 </div>
 
                                 <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
