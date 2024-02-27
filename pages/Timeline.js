@@ -39,7 +39,7 @@ export default function Timeline(){
                                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-400">
                                     <h3 className="text-xl font-semibold tracki">Graduated From Seneca</h3>
                                     <time className="text-xs tracki uppercase text-gray-400">Sep 2023</time>
-                                    <p className="mt-3">Graduated with 4.0 GPA, achieving high honours. <a>View My Transcript</a></p>
+                                    <p className="mt-3">Graduated with 4.0 GPA, achieving high honours. <a href="/SSR_TSRPT.pdf" className="text-emerald-500 font-semibold hover:underline hover:text-emerald-800 hover:cursor-pointer">View My Transcript</a></p>
                                 </div>
 
                                 {/* 5 */}
