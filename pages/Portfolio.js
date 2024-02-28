@@ -3,11 +3,11 @@ import Link from "next/link"
 export default function Portfolio() {
 
     const websiteArray = [
-        {name:"Museum Search", link:"https://jr-mohan-assignment-6.vercel.app/", imageLoc:"/portfolio/museum.jpg"},
+        {name:"Museum Search", link:"https://jr-mohan-museum-basic.vercel.app/", imageLoc:"/portfolio/museum.jpg"},
     ]
 
     return (
-        <div className="min-h-[calc(100vh-44px)] z-40 bg-white relative">
+        <div className="min-h-[calc(100vh-44px)] z-30 bg-white relative">
             <div className="mx-auto">
                 <h1 className="text-4xl md:text-5xl py-10 font-semibold text-emerald-500 text-center">
                     <span className="text-black">My</span> Portfolio
@@ -15,7 +15,7 @@ export default function Portfolio() {
                 <div className="flex flex-wrap justify-center">
 
                     {websiteArray.map((item, index) => (
-                    <Link href="https://jr-mohan-assignment-6.vercel.app/">
+                    <Link href={item.link}>
                         <div className="p-4 max-w-2xl" key={index}>
                             <div className="hover:cursor-pointer flex rounded-lg shadow-xl h-full flex-col transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                                 
