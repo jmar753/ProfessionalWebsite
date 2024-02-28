@@ -27,9 +27,9 @@ export default function Introduction() {
     ]
 
     return (
-        <div className="min-h-[calc(100vh-44px)] md:flex items-center justify-center bg-white z-40 relative">
-            <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto ">
-                <div className="md:grid md:grid-cols-5 md:pb-4 relative h-[700px]">
+        <div className="md:min-h-[calc(100vh-44px)] md:flex items-center justify-center bg-white z-40 relative">
+            <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto">
+                <div className="md:grid md:grid-cols-5 md:pb-4 relative md:h-[700px]">
 
                     {/* Text side */}
                     <div className="md:p-12 md:col-span-3 md:text-left text-center">
@@ -45,8 +45,8 @@ export default function Introduction() {
                                     A <span className="text-emerald-400">Front-End Developer</span>
                                 </h1>
 
-                                <div className="pt-4 md:pt-8 py-5">
-                                <span className="hidden md:block">👋 Welcome to my web development portfolio! I&apos;m Jr Mohan, a recent graduate</span> from Seneca Polytechnic with a passion for creating captivating web experiences. With specialized knowledge in React and Next.js, I thrive on turning ideas into reality through clean, efficient code!
+                                <div className="pt-4 md:pt-8 py-5 hidden md:block">
+                                👋 Welcome to my web development portfolio! I&apos;m Jr Mohan, a recent graduate from Seneca Polytechnic with a passion for creating captivating web experiences. With specialized knowledge in React and Next.js, I bring innovative solutions to every project I undertake. Whether it&apos;s crafting intuitive user interfaces or optimizing performance, I thrive on turning ideas into reality through clean, efficient code!
                                 </div>
 
                                 <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
@@ -93,7 +93,7 @@ export default function Introduction() {
                     </div>
 
                     {/* Mobile */}
-                    <div className="pt-4 block md:hidden">
+                    <div className="pt-4 block md:hidden w-full">
                         <div className="flex justify-center items-center">
                             <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColourCropped.jpg" alt="Picture of the author"/>
                         </div>
@@ -116,9 +116,8 @@ export default function Introduction() {
                         </div>
                     </div>
 
-
                     {/* Carousel Try */}
-                    <div class="w-full inline-flex flex-nowrap md:hidden pt-6 overflow-hidden">
+                    <div class="w-full inline-flex flex-nowrap md:hidden pt-6 overflow-hidden pb-10">
                         <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
                             {devIconsMobile.map((item, index) => (
                                 <li className="text-center h-full" key={index}>
