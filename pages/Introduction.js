@@ -27,7 +27,7 @@ export default function Introduction() {
     ]
 
     return (
-        <div className="md:min-h-[calc(100vh-44px)] md:flex items-center justify-center bg-white z-40 relative">
+        <div className="md:min-h-[calc(100vh-44px)] md:flex items-center justify-center bg-white z-40 relative shadow-inner">
             <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto">
                 <div className="md:grid md:grid-cols-5 md:pb-4 relative md:h-[700px]">
 
@@ -35,7 +35,7 @@ export default function Introduction() {
                     <div className="md:p-12 md:col-span-3 md:text-left text-center">
                         <div className="h-full flex items-center justify-center">
                             <div className="">
-                                <h1 className="text-3xl pt-4 md:pt-0 md:text-4xl lg:text-5xl font-semibold">
+                                <h1 className="text-3xl pt-6 md:pt-0 md:text-4xl lg:text-5xl font-semibold">
                                     Hello, I&apos;m <span className="md:hidden text-3xl text-emerald-400">Jr Mohan</span>
                                 </h1>
                                 <h1 className="hidden md:block text-6xl lg:text-7xl font-bold text-emerald-400 items-center">
@@ -94,7 +94,7 @@ export default function Introduction() {
 
                     {/* Mobile */}
                     <div className="pt-4 block md:hidden w-full">
-                        <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center py-3">
                             <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColourCropped.jpg" alt="Picture of the author"/>
                         </div>
                         <div className="grid grid-cols-3 gap-3 py-4">
