@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        ...colors,
+      },
       animation: {
         blob: "blob 7s infinite",
         float: "float 8s ease-in-out infinite",
