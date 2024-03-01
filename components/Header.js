@@ -38,14 +38,16 @@ export default function Header(){
 
                     </HiMenu>
                 </div>
-                <span className="-my-1">
-                    Jr.<span className="text-emerald-400">dev</span>
-                </span>
+                <Link href="#Home">
+                    <div className="-my-1">
+                        Jr.<span className="text-emerald-400">dev</span>
+                    </div>
+                </Link>
             </div>
             <div className="hidden md:flex gap-10 justify-around">
                 {navOptions.map((item, index) => (
-                    <Link href={item.route} passHref legacyBehavior key={index}>
-                        <button className={`hover:cursor-pointer transition px-1 duration-200 -my-1 ${router.pathname == item.route ? "text-emerald-400":"text-black hover:text-emerald-600"}`} key={item.value} onClick={()=>setNavState(item.route)}>
+                    <Link href={item.route} key={index}>
+                        <button className={`hover:cursor-pointer transition px-1 duration-200 -my-1 ${router.pathname == item.route ? "text-emerald-400":"text-black hover:text-emerald-400"}`} key={item.value} onClick={()=>setNavState(item.route)}>
                             {item.value}
                         </button>
                     </Link>
