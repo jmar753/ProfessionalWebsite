@@ -50,7 +50,7 @@ export default function Introduction() {
                                 </div>
 
                                 <div className="hidden md:grid grid-cols-3 gap-3 pb-7 pt-4">
-                                    <a href="/JrMohan_Resume.pdf" locale={false}>
+                                    <a href="/JrMohan_Resume.pdf">
                                         <div className="hover:cursor-pointer hover:bg-purple-800 duration-200 bg-purple-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
                                         Resume
                                         </div>
@@ -98,7 +98,7 @@ export default function Introduction() {
                             <img className="bg-white object-cover h-[300px] w-[300px] rounded-full shadow-xl" src="/static/selfieColourCropped.jpg" alt="Picture of the author"/>
                         </div>
                         <div className="grid grid-cols-3 gap-3 py-4">
-                            <a href="/JrMohan_Resume.pdf" locale={false}>
+                            <a href="/JrMohan_Resume.pdf">
                                 <div className="hover:cursor-pointer hover:bg-emerald-800 duration-200  bg-emerald-500 text-white font-semibold text-lg rounded-md flex justify-center items-center h-12 w-full">
                                     Resume
                                 </div>
@@ -117,8 +117,8 @@ export default function Introduction() {
                     </div>
 
                     {/* Carousel Try */}
-                    <div class="w-full inline-flex flex-nowrap md:hidden pt-6 overflow-hidden pb-10">
-                        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
+                    <div className="w-full inline-flex flex-nowrap md:hidden pt-6 overflow-hidden pb-10">
+                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
                             {devIconsMobile.map((item, index) => (
                                 <li className="text-center h-full" key={index}>
                                     <div className={`text-center text-4xl`}>
@@ -128,7 +128,7 @@ export default function Introduction() {
                                 </li>
                             ))}
                         </ul>
-                        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                             {devIconsMobile.map((item, index) => (
                                 <li className="text-center h-full" key={index}>
                                     <div className={`text-center text-4xl`}>
