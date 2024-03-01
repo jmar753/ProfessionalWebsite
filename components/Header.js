@@ -15,7 +15,7 @@ export default function Header(){
     ]
 
     return(
-        <div className="bg-white flex justify-between font-semibold h-11 sticky top-0 z-40 text-xl py-2 px-2 md:px-11 md:shadow-md">
+        <div className="bg-white w-full flex justify-between font-semibold h-11 fixed top-0 z-40 text-xl py-2 px-2 md:px-11 md:shadow-md">
             {/* <div className="bg-neutral-800 w-screen h-screen absolute left-0 top-0 opacity-40"></div>
             <div className="text-base text-left absolute left-0 top-0 z-10 w-3/4 p-6 h-screen divide-y divide-neutral-200 bg-white opacity-100">
                 <button className="text-left text-neutral-900 w-full py-3 pr-3  text-2xl my-1">

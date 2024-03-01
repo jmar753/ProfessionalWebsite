@@ -27,7 +27,7 @@ export default function Introduction() {
     ]
 
     return (
-        <div className="min-h-[calc(100vh-44px)] flex items-center justify-center bg-white z-30 relative shadow-inner">
+        <div className="min-h-screen flex items-center justify-center bg-white z-30 relative shadow-inner">
             <div className="px-2 md:px-0 md:pt-0 md:max-w-7xl mx-auto w-screen">
                 <div className="md:grid md:grid-cols-5 md:pb-4 relative md:h-[700px]">
 

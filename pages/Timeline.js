@@ -1,7 +1,7 @@
 export default function Timeline(){
 
     return(
-        <div className="md:min-h-[calc(100vh-44px)] md:flex items-center justify-center py-14 lg:py-0 bg-gray-50 shadow-inner relative">
+        <div className="md:min-h-screen md:flex items-center justify-center py-14 lg:py-0 bg-gray-50 shadow-inner relative">
             <div className="hidden 2xl:block bg-emerald-400 h-80 w-80 rounded-full absolute -top-40 -left-40"></div>
             <div className="hidden 2xl:block bg-emerald-400 h-80 w-80 rounded-full absolute -bottom-40 -right-40"></div>
             <div className="px-2 md:px-10 pt-3 md:pt-0 md:max-w-7xl mx-auto">
