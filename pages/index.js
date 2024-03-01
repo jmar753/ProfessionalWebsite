@@ -8,11 +8,10 @@ import Link from "next/link";
 export default function Home(){
 
     return(
-        <div>
+        <>
             <Header/>
-            <a id="Home">
-                <Introduction/>
-            </a>
+            <a id="Home"/>
+            <Introduction/>
             <div className="flex md:hidden bg-gray-50 min-h-[calc(100vh-44px)] text-center px-2 items-center justify-center relative">
                 <div className="bg-emerald-400 h-80 w-80 rounded-full absolute -top-40 -left-40"></div>
                 <div className="bg-emerald-500 h-80 w-80 rounded-full absolute -bottom-40 -right-40"></div>
@@ -25,12 +24,10 @@ export default function Home(){
                     </h1>
                 </div>
             </div>
-            <a id="Timeline">
-                <Timeline/>
-            </a>
-            <a id="Portfolio">
-                <Portfolio/>
-            </a>
-        </div>
+            <a id="Timeline"/>
+            <Timeline/>
+            <a id="Portfolio"/>
+            <Portfolio/>
+        </>
     )
 }
