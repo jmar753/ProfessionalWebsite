@@ -38,7 +38,7 @@ export default function Header(){
                 <div className="bg-neutral-800 w-screen h-screen absolute left-0 top-0 opacity-40 md:hidden"></div>
                 <div className="text-base text-left absolute left-0 top-0 z-10 w-3/4 p-6 h-screen divide-y divide-neutral-200 bg-white opacity-100 md:hidden" ref={newRef}>
                     {navOptionsMobile.map((item, index) => (
-                        <button className="text-left text-neutral-900 w-full py-3 pr-3  text-2xl my-1" onClick={() => {setCheck(false)}}>
+                        <button className="text-left text-neutral-900 w-full py-3 pr-3  text-2xl my-1" onClick={() => {setCheck(false)}} key={index}>
                             <Link href={item.route} key={index}>
                                 {item.value}
                             </Link>

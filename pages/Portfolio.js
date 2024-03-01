@@ -15,8 +15,8 @@ export default function Portfolio() {
                 <div className="flex flex-wrap justify-center">
 
                     {websiteArray.map((item, index) => (
-                    <Link href={item.link}>
-                        <div className="p-4 max-w-2xl" key={index}>
+                    <Link href={item.link}  key={item.name}>
+                        <div className="p-4 max-w-2xl" key={item.name}>
                             <div className="hover:cursor-pointer flex rounded-lg shadow-xl h-full flex-col transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
                                 
                                 <img className="object-cover col-span-2 rounded-lg m-4" src={item.imageLoc} alt=""/>
