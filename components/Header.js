@@ -9,9 +9,9 @@ export default function Header(){
     const router = useRouter();
     
     const navOptions = [
-        {value:"Home", route:"/"},
-        {value:"Timeline", route:"/Timeline"},
-        {value:"Portfolio", route:"/Portfolio"},
+        {value:"Home", route:"#Home"},
+        {value:"Timeline", route:"#Timeline"},
+        {value:"Portfolio", route:"#Portfolio"},
     ]
 
     return(
