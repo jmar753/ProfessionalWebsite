@@ -7,7 +7,7 @@ export default function Introduction() {
         {name: "HTML5", icon: SiHtml5, properties:"text-orange-500"},
         {name: "CSS", icon: SiCss3, properties:"text-sky-500"},
         {name: "Javascript", icon: SiJavascript, properties:"text-yellow-300"},
-        {name: "Next.js", icon: SiNextdotjs, properties:"text-black"},
+        {name: "Next.js", icon: SiNextdotjs, properties:"black"},
         {name: "React", icon: SiReact, properties:"text-sky-300"},
         {name: "Tailwind", icon: SiTailwindcss, properties:"text-sky-400"},
     ]
@@ -123,7 +123,7 @@ export default function Introduction() {
                                 <li className="text-center h-full" key={index}>
                                     <div className={`text-center text-4xl`}>
                                         <item.icon className={`mx-auto ${item.properties}`}/>
-                                        <h1 className="text-lg font-semibold">{item.name}</h1>
+                                        <h1 className="text-lg font-semibold text-neutral-900">{item.name}</h1>
                                     </div>
                                 </li>
                             ))}
@@ -133,7 +133,7 @@ export default function Introduction() {
                                 <li className="text-center h-full" key={index}>
                                     <div className={`text-center text-4xl`}>
                                         <item.icon className={`mx-auto ${item.properties}`}/>
-                                        <h1 className="text-lg font-semibold">{item.name}</h1>
+                                        <h1 className="text-lg font-semibold text-neutral-900">{item.name}</h1>
                                     </div>
                                 </li>
                             ))}
