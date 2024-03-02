@@ -9,7 +9,7 @@ export default function Portfolio() {
     return (
         <div className="min-h-screen z-30 bg-white relative">
             <div className="mx-auto">
-                <h1 className="text-4xl md:text-5xl pt-20 font-semibold text-emerald-500 text-center">
+                <h1 className="text-4xl md:text-5xl pt-20 font-semibold text-emerald-500 text-center pb-5">
                     <span className="text-neutral-800">My</span> Portfolio
                 </h1>
                 <div className="flex flex-wrap justify-center">
